@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>HTML表格标签</title>
+	</head>
+	<body>
+		<!--表格标签学习-->
+		th单元格用于第一行
+		caption为表格标题
+		<p>相关属性：
+		align="center"居中显示
+		border="1"  边框 默认为0
+		cellspacing="0"  线与线的距离
+		cellpdding=""  线与文字的距离
+	    在tr中加入align属性是使单元格内容居中
+		</p>
+		<table >
+			<caption>表格标题</caption>
+			<tr><th>名字</th><th>性别</th><th>年龄</th></tr>
+			<tr><td>张三</td><td>男</td><td>16</td></tr>
+			<tr><td>李四</td><td>男</td><td>18</td></tr>
+		</table>
+		<table border="1" align="center" cellspacing="0" >
+			<caption>表格合并/caption>
+			<tr align="center"><th>名字</th><th>性别</th><th>年龄</th></tr>
+			<tr><td colspan="2">张三</td><td>男</td><</tr>
+			<tr><td rowspan="2">李四</td><td>男</td><td>18</td></tr>
+			<tr><td>男</td><td>18</td></tr>
+		</table>
+	</body>
+</html>
