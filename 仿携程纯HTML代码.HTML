@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>仿携程首页HTML代码</title>
+	</head>
+	<body>
+		<div class="cui-nav-bar">
+			<div class="nav-bar-cont">
+				<!--这是携程的标语 用一个div来显示-->
+				<div class="slogan">让旅行更幸福！</div>
+				<!--这是语言种类选择部分，实际上就是选择不同的服务器，用一个ul来放一个隐藏的div,div里再有一个ul-->
+				<ul class="language">					
+					<li>
+						<div class="language-wrap-drawdowm">
+							<ul	class="language-list" id="cui-language">
+								<li><a id="ctrip-ch" href="#">简体中文</a></li>
+								<li><a id="ctrip-en" href="#">English</a></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+				<!--用一个ul来显示顶头相关信息-->
+				<ul class="nav-bar-set">
+					<!--登陆-->
+					<li class="set-list " id="nav-bar-set-login">
+					<!--这里用了一个onclick，可能用来判断，是否已经登陆--->
+						<a class="peroson-text" onclick=""><span class="set-text"><span class="member-name">你好，</span>请登录</span></a>
+					</li>	
+					<!--注册-->
+					<li class="set-list" id="nav-bar-set-reg">
+						<a class="person-text nav-per" href="https://passport.ctrip.com/user/reg/home "><span class="set-text"> 免费注册 </span></a>	
+					</li>
+					<!--这是登陆之后显示的会员信息-->
+					<li class="set-list">				
+						<a href="#">普通会员</a>
+						<ul "  id="nav-bar-set-my-info">					
+							<!--用于显示头像-->
+							<li class="my-img">
+								<a rel="nofollow" href="#"><img name="nav-bar-d-info" src="https://pic.c-ctrip.com/platform/online/home/ico_deafult.png"></a>
+							</li>
+							<!--用于显示积分-->
+							<li class="my-data">
+								<p class="integral"rel="nofollow">积分：<a href="#">0</a>
+								</p>						
+							</li>
+							<!--这是退出按钮-->
+							<li class="sign-out">
+								<a rel="nofollow" href="https://passport.ctrip.com/user/logout ">退出</a>
+							</li>
+						</ul>
+					</li>
+					<!--消息-->
+					<li class="set-list ">
+						<i class="infor-notice"></i><a class="infor-num" rel="nofollow">消息：<span>0</span></a>
+					</li>
+					<!--用于显示携程客户的相关信息-->
+					<li class="set-list">
+						<a  href="#">我的携程 </a>
+						<ul class="nav-drowndrop">
+							<li>
+								<a rel="nofollow" href="#">我的收藏 </a>
+							</li>
+							<li>
+								<a rel="nofollow" href="#">我的优惠券 </a>
+							</li>
+							<li>
+								<a rel="nofollow" href="#">常用信息 </a>
+							</li>
+							<li>
+								<a rel="nofollow" href="#">我的钱包 </a>
+							</li>
+						</ul>
+					</li>		
+					<!--客户订单-->
+					<li class="set-list">
+					
+						<a href="#">我的订单</a>
+						<ul>
+							<li><a rel="nofollow" href="#">机票+相关订单</a></li>
+							<li><a rel="nofollow" href="#">酒店订单</a></li>
+							<li><a rel="nofollow" href="#">旅游订单订单</a></li>
+							<li><a rel="nofollow" href="#">火车票订单</a></li>
+							<li><a rel="nofollow" href="#">全部订单订单</a></li>
+							<li><a rel="nofollow" href="#">手机号查询订单</a></li>
+						
+						</ul>
+					</li>
+					<!--客服-->
+					<li class="set-list">					
+						<a href="#" target="_blank" >客服中心</a>
+					</li>
+					<!--携程商旅-->
+					<li class="set-list">				
+						<a target="_blank" href="#">携程商旅</a>
+						<ul class="nav-dropdown">
+							<li><a target="_blank" href="#">商旅首页</a></li>
+							<li><a target="_blank" href="#">企业商旅平台</a></li>
+							<li><a target="_blank" href="#">会议旅游</a></li>
+						</ul>
+					</li>
+					<!--手机版二维码下载-->
+					<li class="set-list">
+					<a href="#" ></a>
+						<ul >
+							<li>
+								<img src="https://pic.c-ctrip.com/platform/online/home/er_ctrip_app.jpg" alt=""><p>手机扫码快速下载</p>
+							</li>
+							<li class="ctrip-app">
+								<a href="http://app.ctrip.com " target="_blank">携程旅行手机版</a>
+							</li>
+						</ul>
+					</li>
+				</ul>		
+			</div>
+		</div>				
+	</body>
+</html>
